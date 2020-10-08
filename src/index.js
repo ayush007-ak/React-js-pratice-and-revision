@@ -2,17 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-// ReactDom.render('kya dekhana ha , kaha dekhana hai, callback function');
 ReactDOM.render(
 
-    [
-        <h1>Hello world</h1>, //array [] or Div we have both option
-        <p> Hey Wassup </p>, //we also use fragment coz its fast <></>
-        <h2> Kya baat </h2>
-    ],
-    document.getElementById('root'));
+    <>
+        <h1>Netflix Top Series</h1>
+        <p>Here are the top list</p>
+        <ol>
+            <li>Dark</li>
+            <li>Stranger things</li>
+            <li>Mr .Robot</li>
+            <li>13 Reason why</li>
+        </ol>
 
-//pure javascript
-// var h1 = document.createElement('h1');
-// h1.innerHTML = "Ayush khaskalam";
-// document.getElementById('root').appendChild(h1);
+    </>
+    ,
+    document.getElementById('root')
+
+)
