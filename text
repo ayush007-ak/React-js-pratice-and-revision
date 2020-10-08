@@ -1,0 +1,8 @@
+Node_modules = it is a pacakage and have dependencies of (npm install)
+package.json = It have metadata of react app Ex-version,script etx.
+Render = Means show dekhana
+Agr JS ki madat se koi bhin id ko krna ho access to hum DOm ka use krte ha
+BABBEL = Use to convert js code in brwoser raedable format autmatically. Babble also support modern javascript code. 
+Jsx = import react is use to add jsx in web application without impoerting react we cannot use jsx.it cal only take one single element.
+Render Multiple Element in react = we call all element inside div tag.In react v6 it's possible for rendeer() to return an array element [h1 , p etc].
+React Fragment = <React.Fragment><React.fragment/>
