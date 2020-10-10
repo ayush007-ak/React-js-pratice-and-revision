@@ -2,21 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-//we can only use Expression not Statement inside {curly braces}
 
+const CurrentDate = new Date().toLocaleDateString();
 
-const fname = 'ayush';
-const lname  = 'khaskalam';
-
-//console.log(`This is template litrals ${fname}`)
-
+const Time = new Date().toLocaleTimeString()
 ReactDOM.render(
-<>
-   <h1> {`My name is ${fname } ${lname}`}</h1>
-  <p> Mu licky {2+4}</p>
-  <p> Mu licky {Math.random()}</p>  
+  <>
+  <h1>
+    Hello  my name is ayush
+  </h1>
+  <p> current date is = {CurrentDate}</p>
+  <p>CurrentTime {Time}</p>
+  
   </>
-    ,
-    document.getElementById('root')
-
+  , 
+  document.getElementById('root')
 )
