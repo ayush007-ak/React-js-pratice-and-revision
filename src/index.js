@@ -2,19 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 
-
-const CurrentDate = new Date().toLocaleDateString();
-
-const Time = new Date().toLocaleTimeString()
+const name = 'Ayush';
+const img1 = "https://picsum.photos/id/1/367/267"
 ReactDOM.render(
   <>
-  <h1>
-    Hello  my name is ayush
-  </h1>
-  <p> current date is = {CurrentDate}</p>
-  <p>CurrentTime {Time}</p>
-  
+    <h1 contentEditable="true">My  name is {name}</h1>
+    <img src="https://picsum.photos/id/10/367/267" alt="img" />
+    <img src={img1}/>
   </>
-  , 
-  document.getElementById('root')
+  , document.getElementById('root')
+
 )
