@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom';
 import App from './App';
-
+import './index.css'
 
 function Card(props){
   //console.log(props)
@@ -23,6 +23,20 @@ function Card(props){
 
 
 ReactDOM.render(<>
+
+<Card  imgsrc='https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Stranger_Things_season_2.jpg/220px-Stranger_Things_season_2.jpg'
+  title="A Netflix Original Series"
+  sname='Stranger'
+  link='https://www.imdb.com/title/tt4574334/'
+/>
+
+
+<Card  imgsrc='https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Stranger_Things_season_2.jpg/220px-Stranger_Things_season_2.jpg'
+  title="A Netflix Original Series"
+  sname='Stranger'
+  link='https://www.imdb.com/title/tt4574334/'
+/>
+
 
 <Card  imgsrc='https://upload.wikimedia.org/wikipedia/en/thumb/f/f7/Stranger_Things_season_2.jpg/220px-Stranger_Things_season_2.jpg'
   title="A Netflix Original Series"
