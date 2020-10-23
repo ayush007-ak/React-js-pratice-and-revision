@@ -1,0 +1,21 @@
+Node_modules = it is a pacakage and have dependencies of (npm install)
+package.json = It have metadata of react app Ex-version,script etx.
+Render = Means show dekhana
+Agr JS ki madat se koi bhin id ko krna ho access to hum DOm ka use krte ha
+BABBEL = Use to convert js code in brwoser raedable format autmatically. Babble also support modern javascript code. 
+Jsx = import react is use to add jsx in web application without impoerting react we cannot use jsx.it cal only take one single element.
+Render Multiple Element in react = we call all element inside div tag.In react v6 it's possible for rendeer() to return an array element [h1 , p etc].
+React Fragment = <React.Fragment><React.fragment/>
+Jsx Expression =  const name = ayush;  -> {name}
+Template litrals = always use ``(backticks)
+Date & Time = Date().localDatestring(), LocalTimeString();
+JSX Attributes = <a href="" <- arrtibutes target = '' <- attributes hum iski propert set krte ha
+App.js = is work as a mediator between components and dom.
+Es6 Module import-Export = import - means banana Export - means bechna , default only use for export one value
+props =  props which stand for properties React props are like function argument in java script and attributes in HTML(custom attributes)we pass custom attributes as a object.
+Arrays = const data  =  [{}, {}] in react js and accessing it
+map method = map method create a new array with the result of calling a function for every array element.the map() method calls the provided function once for each element in array in order.
+array.map(function(currentvalue, index, arr), thisvalue)
+React Developer tools = every child have unique key prop Error Key={id} or {val.id}
+if else in react = lecutre 28/80
+React conditional rendering = 

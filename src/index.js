@@ -1,3 +1,44 @@
+//CONDITIONAL RENDERING TERNARY OPERATOR IN  REACT
+
+// CONDITION ? EXPRIFTRUE : EXPRIFFALSE
+//                                   if true    if false
+// EX = {favSeries === "netflix" ? <Netflix/> : <Amazon/>}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // const myarr = ['ayush', 'khas', 'kalam']
 
 // console.log(myarr[0])
@@ -14,36 +55,36 @@
 
 
 
-<p id='showdata'></p>//to show in html
+// <p id='showdata'></p>//to show in html
 
-//EXAMPLE-
-const StudentData = [
-  {
-    id: 1,
-    name: 'ayush',
-    lastname: 'khaskalam'
+// //EXAMPLE-
+// const StudentData = [
+//   {
+//     id: 1,
+//     name: 'ayush',
+//     lastname: 'khaskalam'
 
-  },
-  {
-    id:2,
-    name: 'Trisha',
-    lastname:'sur'
-  },
-  {
-    id:3,
-    name:'aditi',
-    lastname: 'khaskalam'
-  },
-];
+//   },
+//   {
+//     id:2,
+//     name: 'Trisha',
+//     lastname:'sur'
+//   },
+//   {
+//     id:3,
+//     name:'aditi',
+//     lastname: 'khaskalam'
+//   },
+// ];
 
 
-const maparr = StudentData.map( (cvalue) => {
+// const maparr = StudentData.map( (cvalue) => {
   
-return `my name is ${cvalue.name}. my last name is ${cvalue.lastname}`
-} )
+// return `my name is ${cvalue.name}. my last name is ${cvalue.lastname}`
+// } )
 
-console.log(maparr)
-document.getElementById('showdata').innerHTML=maparr;
+// console.log(maparr)
+// document.getElementById('showdata').innerHTML=maparr;
  
 
 
