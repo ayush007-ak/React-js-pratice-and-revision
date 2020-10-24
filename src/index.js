@@ -1,43 +1,44 @@
+import React from 'react' ;
+import ReactDOM from 'react-dom';
+import App from './App';
+import "./index.css";
+
+ReactDOM.render(<App/> , document.getElementById('root'));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //CONDITIONAL RENDERING TERNARY OPERATOR IN  REACT
 
 // CONDITION ? EXPRIFTRUE : EXPRIFFALSE
 //                                   if true    if false
 // EX = {favSeries === "netflix" ? <Netflix/> : <Amazon/>}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // const myarr = ['ayush', 'khas', 'kalam']
 
