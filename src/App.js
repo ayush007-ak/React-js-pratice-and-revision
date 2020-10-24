@@ -6,7 +6,9 @@ const SlotM = (props) => {
     // let y = 'smile';
     // let z = 'semta';
 
-    let x =props.x;
+
+    //let {x , y, z} = props;  //Object Destructuring props ma hume object mil rha ha
+    let x =props.x;   
     let y= props.y;
     let z = props.z;
     if ( (x === y) && (y === z) ) {   //&& means both should be true
@@ -46,8 +48,8 @@ const App = () => {
              <h1 className="heading_style"> :slot machine Welcome to <span style={{ fontWeight: "bold"}}>Slot Game</span>:Slot</h1>
             
              <SlotM x="smile" y='smile' z ='senta' /> now we create props and pass it
-             <SlotM/>
-             <SlotM/>
+             <SlotM x='smile' y='smile' z='smile'/>
+             <SlotM x='smile' y='senta' z='cry'/>
          </div>
     )
 }
