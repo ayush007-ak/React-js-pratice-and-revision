@@ -55,3 +55,10 @@ const App = () => {
 }
 
 export default App
+
+
+// const myprogrmas = ['java','python','c++','c#','js'] //ES6 Array Destructuring
+// //  let [top1,top2,top3,top4,top5] = myprogrmas
+// // console.log(top1,top2,top3,top4,top5)
+// let [top1,,,,toplast] = myprogrmas;
+// console.log("my fav programming language is"+ toplast)

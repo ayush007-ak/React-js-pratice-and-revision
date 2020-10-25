@@ -19,3 +19,5 @@ array.map(function(currentvalue, index, arr), thisvalue)
 React Developer tools = every child have unique key prop Error Key={id} or {val.id}
 if else in react = lecutre 28/80
 React conditional rendering = 
+slot machine game
+Array destructuring - destructurin is a js expression that makes it possible to unpack values from array or properties from object inti distinct variables. 
