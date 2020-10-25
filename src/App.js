@@ -1,60 +1,148 @@
-import React from 'react'
+import React, {useState} from 'react'
 
 
-const SlotM = (props) => {
-    // let x ='smile';
-    // let y = 'smile';
-    // let z = 'semta';
 
-
-    //let {x , y, z} = props;  //Object Destructuring props ma hume object mil rha ha
-    let x =props.x;   
-    let y= props.y;
-    let z = props.z;
-    if ( (x === y) && (y === z) ) {   //&& means both should be true
-        return (
-        <>
-            <div className='slot_inner'>
-                 <h1> {x} {y} {z}</h1>
-
-                 <h1> This is Matching </h1>
-                 <hr/>
-            </div>
-         
-         
-         </>
-        );
-    }else{
-
-        return (
-            <>
-                <div className='slot_inner'>
-                     <h1> {x} {y} {z}</h1>
-    
-                     <h1> This is Not Matching </h1>
-                     <hr/>
-                </div>
-             
-             
-             </>
-            );
-
-    }
-};
 
 const App = () => {
+    
+const state = useState();
+console.log(state);
+
+let count = 1;  //yeh ek state ha jo direct change ni hogs isliye hum hooks use karinge we can change state of anything using  hooks 
+
+const IncNum =  () =>{
+    
+console.log('clicked'+count++)
+};
     return (
         <div>
-             <h1 className="heading_style"> :slot machine Welcome to <span style={{ fontWeight: "bold"}}>Slot Game</span>:Slot</h1>
-            
-             <SlotM x="smile" y='smile' z ='senta' /> now we create props and pass it
-             <SlotM x='smile' y='smile' z='smile'/>
-             <SlotM x='smile' y='senta' z='cry'/>
-         </div>
-    )
-}
+           <h1> {count} </h1>
+           <button onClick={IncNum}>Click me</button> 
+        </div>
+    );
+};
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React from 'react'
+
+
+// const SlotM = (props) => {
+//     // let x ='smile';
+//     // let y = 'smile';
+//     // let z = 'semta';
+
+
+//     //let {x , y, z} = props;  //Object Destructuring props ma hume object mil rha ha
+//     let x =props.x;   
+//     let y= props.y;
+//     let z = props.z;
+//     if ( (x === y) && (y === z) ) {   //&& means both should be true
+//         return (
+//         <>
+//             <div className='slot_inner'>
+//                  <h1> {x} {y} {z}</h1>
+
+//                  <h1> This is Matching </h1>
+//                  <hr/>
+//             </div>
+         
+         
+//          </>
+//         );
+//     }else{
+
+//         return (
+//             <>
+//                 <div className='slot_inner'>
+//                      <h1> {x} {y} {z}</h1>
+    
+//                      <h1> This is Not Matching </h1>
+//                      <hr/>
+//                 </div>
+             
+             
+//              </>
+//             );
+
+//     }
+// };
+
+// const App = () => {
+//     return (
+//         <div>
+//              <h1 className="heading_style"> :slot machine Welcome to <span style={{ fontWeight: "bold"}}>Slot Game</span>:Slot</h1>
+            
+//              <SlotM x="smile" y='smile' z ='senta' /> now we create props and pass it
+//              <SlotM x='smile' y='smile' z='smile'/>
+//              <SlotM x='smile' y='senta' z='cry'/>
+//          </div>
+//     )
+// }
+
+// export default App
 
 
 // const myprogrmas = ['java','python','c++','c#','js'] //ES6 Array Destructuring
