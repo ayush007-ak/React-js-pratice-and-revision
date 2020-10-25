@@ -1,28 +1,95 @@
 import React, { useState } from 'react'
+let time =new Date().toLocaleTimeString();
 
 const App = () => {
-
-
-    let newTime = new Date().toLocaleTimeString();
-
-    const [ctime, setCtime] = useState(newTime)
-
-
-
-    const UpdateTime = () => {
-        // console.log('or bhai')
-       let newmyTime = new Date().toLocaleTimeString();
-       setCtime(newmyTime)
+    const Increase = () =>{
+        time =new Date().toLocaleTimeString();
+        setCtime(time)
     }
+
+    setInterval(Increase , 1000)
+
+    const [ctime,setCtime] = useState(time)
     return (
         <div>
-            <h1> {ctime} </h1>
-            <button onClick={UpdateTime}>Get Time</button>
+           
+            <h1>{ctime}</h1>
+            <button  onClick={Increase}>Update time second</button>
         </div>
     )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+
+
+//     let newTime = new Date().toLocaleTimeString();
+
+//     const [ctime, setCtime] = useState(newTime)
+
+
+
+//     const UpdateTime = () => {
+//         // console.log('or bhai')
+//        let newmyTime = new Date().toLocaleTimeString();
+//        setCtime(newmyTime)
+//     }
+//     return (
+//         <div>
+//             <h1> {ctime} </h1>
+//             <button onClick={UpdateTime}>Get Time</button>
+//         </div>
+//     )
+// }
+
+// export default App
 
 
 
