@@ -6,13 +6,15 @@ import React, {useState} from 'react'
 const App = () => {
     
 const state = useState();
-console.log(state);
+const [count , setCount] = useState(0);  //usestate is an array which return with two items [stateobject ,updated function] or [current dataq , updated data]
+//console.log(state);
 
-let count = 1;  //yeh ek state ha jo direct change ni hogs isliye hum hooks use karinge we can change state of anything using  hooks 
+//let count = 1;  //yeh ek state ha jo direct change ni hogs isliye hum hooks use karinge we can change state of anything using  hooks 
 
 const IncNum =  () =>{
+    setCount(count+1);
     
-console.log('clicked'+count++)
+//console.log('clicked'+count++)
 };
     return (
         <div>
