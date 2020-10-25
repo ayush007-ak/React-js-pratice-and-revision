@@ -1,28 +1,26 @@
-import React, {useState} from 'react'
-
-
-
+import React, { useState } from 'react'
 
 const App = () => {
-    
-const state = useState();
-const [count , setCount] = useState(0);  //usestate is an array which return with two items [stateobject ,updated function] or [current dataq , updated data]
-//console.log(state);
 
-//let count = 1;  //yeh ek state ha jo direct change ni hogs isliye hum hooks use karinge we can change state of anything using  hooks 
 
-const IncNum =  () =>{
-    setCount(count+1);
-    
-//console.log('clicked'+count++)
-};
+    let newTime = new Date().toLocaleTimeString();
+
+    const [ctime, setCtime] = useState(newTime)
+
+
+
+    const UpdateTime = () => {
+        // console.log('or bhai')
+       let newmyTime = new Date().toLocaleTimeString();
+       setCtime(newmyTime)
+    }
     return (
         <div>
-           <h1> {count} </h1>
-           <button onClick={IncNum}>Click me</button> 
+            <h1> {ctime} </h1>
+            <button onClick={UpdateTime}>Get Time</button>
         </div>
-    );
-};
+    )
+}
 
 export default App
 
@@ -82,8 +80,28 @@ export default App
 
 
 
+// const App = () => {
 
+// const state = useState();
+// const [count , setCount] = useState(0);  //usestate is an array which return with two items [stateobject ,updated function] or [current dataq , updated data]
+// //console.log(state);
 
+// //let count = 1;  //yeh ek state ha jo direct change ni hogs isliye hum hooks use karinge we can change state of anything using  hooks 
+
+// const IncNum =  () =>{
+//     setCount(count+1);
+
+// //console.log('clicked'+count++)
+// };
+//     return (
+//         <div>
+//            <h1> {count} </h1>
+//            <button onClick={IncNum}>Click me</button> 
+//         </div>
+//     );
+// };
+
+// export default App
 
 
 
@@ -110,8 +128,8 @@ export default App
 //                  <h1> This is Matching </h1>
 //                  <hr/>
 //             </div>
-         
-         
+
+
 //          </>
 //         );
 //     }else{
@@ -120,12 +138,12 @@ export default App
 //             <>
 //                 <div className='slot_inner'>
 //                      <h1> {x} {y} {z}</h1>
-    
+
 //                      <h1> This is Not Matching </h1>
 //                      <hr/>
 //                 </div>
-             
-             
+
+
 //              </>
 //             );
 
@@ -136,7 +154,7 @@ export default App
 //     return (
 //         <div>
 //              <h1 className="heading_style"> :slot machine Welcome to <span style={{ fontWeight: "bold"}}>Slot Game</span>:Slot</h1>
-            
+
 //              <SlotM x="smile" y='smile' z ='senta' /> now we create props and pass it
 //              <SlotM x='smile' y='smile' z='smile'/>
 //              <SlotM x='smile' y='senta' z='cry'/>
