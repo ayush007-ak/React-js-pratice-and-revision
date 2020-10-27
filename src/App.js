@@ -7,18 +7,19 @@ const App = () => {
     const [fullName, setfullName] = useState({
         firstname: '',
         lastname: '',
+        email: '',
+        number: '',
     }); //useState ke andar hum object or function bhi pass kr skte ha
-    // const [fullName, setFullName] = useState()
-    //  const [lastName ,setLastName] = useState() 
-    //  const [newlastName , setnewLast] = useState()
-
+    
     const inputEvent = (event) => {
-        console.log(event.target.value)
-        console.log(event.target.name)
-        
+        // console.log(event.target.value)
+        // console.log(event.target.name)
 
-        const value = event.target.value;
-        const name = event.target.name;
+
+
+        const {name, value} = event.target;//Destructuring
+        // const value = event.target.value;
+        // const name = event.target.name;
        
         setfullName( (preValue) => {
             console.log(preValue)
@@ -26,12 +27,32 @@ const App = () => {
                 return {
                     firstname: value,
                     lastname: preValue.lastname,
+                    email:preValue.email,
+                    number:preValue.number,
                 }
                
             }else if(name === "lastname"){
                 return{
                     firstname: preValue.firstname,
                     lastname: value,
+                    email: preValue.email,
+                    number: preValue.number,
+                }
+            }
+            else if(name === "email"){
+                return{
+                    firstname: preValue.firstname,
+                    lastname: preValue.lastname,
+                    email: value,
+                    number:preValue.number,
+                }
+            }
+            else if(name === "number"){
+                return{
+                    firstname: preValue.firstname,
+                    lastname: preValue.lastname,
+                    email: preValue.email,
+                    number: value,
                 }
             }
         })
@@ -52,8 +73,10 @@ const App = () => {
                 <form onSubmit={onSubmit}>
                     <div>
                         <h1>Hello {fullName.firstname} {fullName.lastname} </h1>
-                        <input type='text' placeholder='Enter your name' name='firstname' onChange={inputEvent} value={fullName.firstname} /><br/>
-                        <input type='text' placeholder='Enter your password' name='lastname' onChange={inputEvent} value={fullName.lastname} />
+                        <input type='text' placeholder='Enter your firstname' name='firstname' onChange={inputEvent} value={fullName.firstname} /><br/>
+                        <input type='text' placeholder='Enter your lastname' name='lastname' onChange={inputEvent} value={fullName.lastname} />
+                        <input type='text' placeholder='Enter your email' name='email' onChange={inputEvent} value={fullName.email} />
+                        <input type='text' placeholder='Enter your number' name='number' onChange={inputEvent} value={fullName.number} />
                         <button type='submit' >Submit </button>
                     </div>
                 </form>
