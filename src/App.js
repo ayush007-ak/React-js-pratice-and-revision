@@ -4,33 +4,56 @@ import React, { useState } from 'react'
 
 const App = () => {
 
-    const [name, setName] = useState("");
-    const [fullName, setFullName] = useState()
-     const [lastName ,setLastName] = useState() 
-     const [newlastName , setnewLast] = useState()
+    const [fullName, setfullName] = useState({
+        firstname: '',
+        lastname: '',
+    }); //useState ke andar hum object or function bhi pass kr skte ha
+    // const [fullName, setFullName] = useState()
+    //  const [lastName ,setLastName] = useState() 
+    //  const [newlastName , setnewLast] = useState()
 
     const inputEvent = (event) => {
-        console.log(event.target.value) 
-        setName(event.target.value)
+        console.log(event.target.value)
+        console.log(event.target.name)
+        
+
+        const value = event.target.value;
+        const name = event.target.name;
+       
+        setfullName( (preValue) => {
+            console.log(preValue)
+            if(name === 'firstname'){
+                return {
+                    firstname: value,
+                    lastname: preValue.lastname,
+                }
+               
+            }else if(name === "lastname"){
+                return{
+                    firstname: preValue.firstname,
+                    lastname: value,
+                }
+            }
+        })
+        //setName(event.target.value)
     }
 
     const onSubmit = (event) => {
         event.preventDefault(); //har event ka ek object hota ha (e) or event.preventdefault bina refresh kr value leta ha mt kro refresh mtb
-        setFullName(name);
-        setnewLast(lastName)
+        // setFullName(name);
+        // setnewLast(lastName )
+        alert('form submitted')
     }
 
-    const inputEvent2 = (event) =>{
-        setLastName(event.target.value)
-    }
+    
     return (
         <>
             <div className="main_div">
                 <form onSubmit={onSubmit}>
                     <div>
-                        <h1>Hello {fullName} {newlastName}</h1>
-                        <input type='text' placeholder='Enter your name' onChange={inputEvent} value={name} /><br/>
-                        <input type='text' placeholder='Enter your password' onChange={inputEvent2} value={lastName} />
+                        <h1>Hello {fullName.firstname} {fullName.lastname} </h1>
+                        <input type='text' placeholder='Enter your name' name='firstname' onChange={inputEvent} value={fullName.firstname} /><br/>
+                        <input type='text' placeholder='Enter your password' name='lastname' onChange={inputEvent} value={fullName.lastname} />
                         <button type='submit' >Submit </button>
                     </div>
                 </form>
