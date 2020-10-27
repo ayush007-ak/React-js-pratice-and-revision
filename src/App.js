@@ -1,20 +1,23 @@
 import React, { useState } from 'react'
-let time =new Date().toLocaleTimeString();
+
+//{Function} or ase bhi kr skte ha onclick ke andar "MyFunction()"
 
 const App = () => {
-    const Increase = () =>{
-        time =new Date().toLocaleTimeString();
-        setCtime(time)
+
+    const purple = "#8e44ad"
+
+    const [recent , setChange] = useState(purple)
+
+    const bgChange = () => {
+        // console.log('clcik')
+        let bgcolor = "#34495e";
+        setChange(bgcolor)
+       
+        
     }
-
-    setInterval(Increase , 1000)
-
-    const [ctime,setCtime] = useState(time)
     return (
-        <div>
-           
-            <h1>{ctime}</h1>
-            <button  onClick={Increase}>Update time second</button>
+        <div style = {{backgroundColor : recent}}>
+            <button onClick = {bgChange}>Click me</button>
         </div>
     )
 }
@@ -48,20 +51,28 @@ export default App
 
 
 
+// import React, { useState } from 'react'
+// let time =new Date().toLocaleTimeString();
 
+// const App = () => {
+//     const Increase = () =>{
+//         time =new Date().toLocaleTimeString();
+//         setCtime(time)
+//     }
 
+//     setInterval(Increase , 1000)
 
+//     const [ctime,setCtime] = useState(time)
+//     return (
+//         <div>
 
+//             <h1>{ctime}</h1>
+//             <button  onClick={Increase}>Update time second</button>
+//         </div>
+//     )
+// }
 
-
-
-
-
-
-
-
-
-
+// export default App
 
 
 
