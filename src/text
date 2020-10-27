@@ -24,4 +24,5 @@ Array destructuring - destructurin is a js expression that makes it possible to 
 React HOOKS -> it allow you to use state and other features without writing a class.hooks are the functions which 'hooks into' React state and lifecycle featurs from function componenets
 it does not work inside classes. Gooks should always use top level of the React functions.
 usestate = we always pass initial value to usestate(0)
-Events In Reactr js = click , hover ,mouse in , mouse out , 
+Events In Reactr js = click , hover ,mouse in , mouse out 
+Forms in React = creating form and submitting we are using control component.Har jagha pr on change add krna hi ha.

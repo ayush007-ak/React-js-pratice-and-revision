@@ -1,38 +1,37 @@
-import React, { useState } from 'react'
-
-//{Function} or ase bhi kr skte ha onclick ke andar "MyFunction()"
+import React, {useState} from 'react'
 
 const App = () => {
 
-    const purple = "#8e44ad"
-
-    const [recent , setChange] = useState(purple)
-     const [name,setName] = useState('click me')     
+    const [name , setName] = useState("");
+    const [fullName , setFullName] = useState()
 
 
-
-    const bgChange = () => {
-        // console.log('clcik')
-        let bgcolor = "#34495e";
-        setChange(bgcolor)
-        setName("ouch")
-       
-        
+    const inputEvent =(event) =>{
+        console.log(event.target.value)
+        setName(event.target.value)
     }
 
-    const bgBack = () => {
-        setChange(purple)
-        setName('Back to 😁')
+    const onSubmit =() => {
+        setFullName(name);
     }
     return (
-        <div style = {{backgroundColor : recent}}>
-            <button onClick = {bgChange} onDoubleClick={bgBack}>{name}</button>
-        </div>
+      <>
+      <div>
+          <h1>Hello {fullName}</h1> 
+          <input type='text' placeholder='Enter your name' onChange={inputEvent} value={name} />  
+          <button onClick={onSubmit}>Submit </button>
+      </div>
+
+      </>
     )
 }
-
+//IN REact WE have to types of component Controlled and Uncontrolled
 export default App
 
+ 
+
+
+    
 
 
 
@@ -55,6 +54,65 @@ export default App
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+
+// //{Function} or ase bhi kr skte ha onclick ke andar "MyFunction()"
+
+// const App = () => {
+
+//     const purple = "#8e44ad"
+
+//     const [recent , setChange] = useState(purple)
+//      const [name,setName] = useState('click me')     
+
+
+
+//     const bgChange = () => {
+//         // console.log('clcik')
+//         let bgcolor = "#34495e";
+//         setChange(bgcolor)
+//         setName("ouch")
+       
+        
+//     }
+
+//     const bgBack = () => {
+//         setChange(purple)
+//         setName('Back to 😁 ')
+//     }
+//     return (
+//         <div style = {{backgroundColor : recent}}>
+//             <button onClick = {bgChange} onDoubleClick={bgBack}>{name}</button>
+//         </div>
+//     )
+// }
+
+// export default App
 
 
 
@@ -110,56 +168,6 @@ export default App
 // }
 
 // export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
