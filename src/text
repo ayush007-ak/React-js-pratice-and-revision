@@ -26,3 +26,4 @@ it does not work inside classes. Gooks should always use top level of the React 
 usestate = we always pass initial value to usestate(0)
 Events In Reactr js = click , hover ,mouse in , mouse out 
 Forms in React = creating form and submitting we are using control component.Har jagha pr on change add krna hi ha.
+LOgin form = event.preventDefault(), (event) <- object ha yeh

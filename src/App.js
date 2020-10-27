@@ -1,76 +1,45 @@
-import React, {useState} from 'react'
+
+
+import React, { useState } from 'react'
 
 const App = () => {
 
-    const [name , setName] = useState("");
-    const [fullName , setFullName] = useState()
+    const [name, setName] = useState("");
+    const [fullName, setFullName] = useState()
+     const [lastName ,setLastName] = useState() 
+     const [newlastName , setnewLast] = useState()
 
-
-    const inputEvent =(event) =>{
-        console.log(event.target.value)
+    const inputEvent = (event) => {
+        console.log(event.target.value) 
         setName(event.target.value)
     }
 
-    const onSubmit =() => {
+    const onSubmit = (event) => {
+        event.preventDefault(); //har event ka ek object hota ha (e) or event.preventdefault bina refresh kr value leta ha mt kro refresh mtb
         setFullName(name);
+        setnewLast(lastName)
+    }
+
+    const inputEvent2 = (event) =>{
+        setLastName(event.target.value)
     }
     return (
-      <>
-      <div>
-          <h1>Hello {fullName}</h1> 
-          <input type='text' placeholder='Enter your name' onChange={inputEvent} value={name} />  
-          <button onClick={onSubmit}>Submit </button>
-      </div>
-
-      </>
+        <>
+            <div className="main_div">
+                <form onSubmit={onSubmit}>
+                    <div>
+                        <h1>Hello {fullName} {newlastName}</h1>
+                        <input type='text' placeholder='Enter your name' onChange={inputEvent} value={name} /><br/>
+                        <input type='text' placeholder='Enter your password' onChange={inputEvent2} value={lastName} />
+                        <button type='submit' >Submit </button>
+                    </div>
+                </form>
+            </div>
+        </>
     )
 }
 //IN REact WE have to types of component Controlled and Uncontrolled
 export default App
-
- 
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -97,8 +66,8 @@ export default App
 //         let bgcolor = "#34495e";
 //         setChange(bgcolor)
 //         setName("ouch")
-       
-        
+
+
 //     }
 
 //     const bgBack = () => {
