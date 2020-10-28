@@ -28,3 +28,4 @@ Events In Reactr js = click , hover ,mouse in , mouse out
 Forms in React = creating form and submitting we are using control component.Har jagha pr on change add krna hi ha.
 LOgin form = event.preventDefault(), (event) <- object ha yeh
 jab jab user kuch bhi type karega inputevent call hoga (onChange)
+SPREAD OPERATOR = 
