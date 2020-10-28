@@ -8,22 +8,36 @@ ReactDOM.render(<App/> , document.getElementById('root'));
 
 
 //1ST  USE
-const fullname = ['Ayush', 'khaskalam'];
-const biodata = [1 , ...fullname , ] //spread operator array ka datat access krne ke leye (...).we can call array inside array.
+// const fullname = ['Ayush', 'khaskalam'];
+// const biodata = [1 , ...fullname , ] //spread operator array ka datat access krne ke leye (...).we can call array inside array.
+// console.log(biodata)
+
+
+// //2ND USE 
+// var shooter = ['call' , 'of ', 'duty']
+// var racing = ['racer', 'nfs']
+// var game =[...shooter , ...racing]
+// console.log(game)
+
+// //3rd use
+// var shootergame = ['cod' , 'nfs' , 'road' , 'fighter']
+// var[first ,...remaining] = shootergame;
+// console.log(first); //cod
+// console.log(remaining)
+
+const fullName = {
+    fname: 'ayush',              //<-object ha yeh
+    lname: 'khaskalam',
+};
+
+const biodata = {
+id : 1,
+...fullName,
+age : 26,
+gender : 'male',
+}
+
 console.log(biodata)
-
-
-//2ND USE 
-var shooter = ['call' , 'of ', 'duty']
-var racing = ['racer', 'nfs']
-var game =[...shooter , ...racing]
-console.log(game)
-
-//3rd use
-var shootergame = ['cod' , 'nfs' , 'road' , 'fighter']
-var[first ,...remaining] = shootergame;
-console.log(first); //cod
-console.log(remaining)
 
  
 
