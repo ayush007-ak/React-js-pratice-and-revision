@@ -1,4 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react';
+import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+import AddIcon from '@material-ui/icons/Add';
+
 
 const App = () => {
 
@@ -23,8 +26,8 @@ const App = () => {
                 <h1> {num} </h1>   
                  
                 <div className='btn_div'>
-                    <button onClick={incNum}> Increm</button>
-                    <button onClick={dicNum}> Decrem </button>
+                    <button onClick={incNum}> <AddIcon/> </button>
+                    <button onClick={dicNum}>  <AddIcon/> </button>
                 </div>
 
             </div>
@@ -35,71 +38,6 @@ const App = () => {
 }
 
 export default App
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
