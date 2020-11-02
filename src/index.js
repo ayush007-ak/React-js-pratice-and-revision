@@ -20,24 +20,24 @@ ReactDOM.render(<App/> , document.getElementById('root'));
 // console.log(game)
 
 // //3rd use
-// var shootergame = ['cod' , 'nfs' , 'road' , 'fighter']
-// var[first ,...remaining] = shootergame;
-// console.log(first); //cod
-// console.log(remaining)
+// // var shootergame = ['cod' , 'nfs' , 'road' , 'fighter']
+// // var[first ,...remaining] = shootergame;
+// // console.log(first); //cod
+// // console.log(remaining)
 
-const fullName = {
-    fname: 'ayush',              //<-object ha yeh
-    lname: 'khaskalam',
-};
+// const fullName = {
+//     fname: 'ayush',              //<-object ha yeh
+//     lname: 'khaskalam',
+// };
 
-const biodata = {
-id : 1,
-...fullName,
-age : 26,
-gender : 'male',
-}
+// const biodata = {
+// id : 1,
+// ...fullName,
+// age : 26,
+// gender : 'male',
+// }
 
-console.log(biodata)
+// console.log(biodata)
 
  
 

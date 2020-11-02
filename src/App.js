@@ -1,91 +1,211 @@
-
-
 import React, { useState } from 'react'
 
 const App = () => {
 
-    const [fullName, setfullName] = useState({
-        firstname: '',
-        lastname: '',
-        email: '',
-        number: '',
-    }); //useState ke andar hum object or function bhi pass kr skte ha
-    
-    const inputEvent = (event) => {
-        // console.log(event.target.value)
-        // console.log(event.target.name)
+    const [num ,setNum] = useState(0);
 
-
-
-        const {name, value} = event.target;//Destructuring
-        // const value = event.target.value;
-        // const name = event.target.name;
-       
-        setfullName( (preValue) => {
-            console.log(preValue)
-            if(name === 'firstname'){
-                return {
-                    firstname: value,
-                    lastname: preValue.lastname,
-                    email:preValue.email,
-                    number:preValue.number,
-                }
-               
-            }else if(name === "lastname"){
-                return{
-                    firstname: preValue.firstname,
-                    lastname: value,
-                    email: preValue.email,
-                    number: preValue.number,
-                }
-            }
-            else if(name === "email"){
-                return{
-                    firstname: preValue.firstname,
-                    lastname: preValue.lastname,
-                    email: value,
-                    number:preValue.number,
-                }
-            }
-            else if(name === "number"){
-                return{
-                    firstname: preValue.firstname,
-                    lastname: preValue.lastname,
-                    email: preValue.email,
-                    number: value,
-                }
-            }
-        })
-        //setName(event.target.value)
+    const incNum = () =>{
+        setNum(num+1)  //num = num+1
     }
 
-    const onSubmit = (event) => {
-        event.preventDefault(); //har event ka ek object hota ha (e) or event.preventdefault bina refresh kr value leta ha mt kro refresh mtb
-        // setFullName(name);
-        // setnewLast(lastName )
-        alert('form submitted')
-    }
+    const dicNum =() =>{
 
-    
+        if(num > 0){
+       setNum(num-1);
+    }else{
+        setNum(0);
+    }
+    }
     return (
-        <>
-            <div className="main_div">
-                <form onSubmit={onSubmit}>
-                    <div>
-                        <h1>Hello {fullName.firstname} {fullName.lastname} </h1>
-                        <input type='text' placeholder='Enter your firstname' name='firstname' onChange={inputEvent} value={fullName.firstname} /><br/>
-                        <input type='text' placeholder='Enter your lastname' name='lastname' onChange={inputEvent} value={fullName.lastname} />
-                        <input type='text' placeholder='Enter your email' name='email' onChange={inputEvent} value={fullName.email} />
-                        <input type='text' placeholder='Enter your number' name='number' onChange={inputEvent} value={fullName.number} />
-                        <button type='submit' >Submit </button>
-                    </div>
-                </form>
+        <div className='main_div'>
+            <div className='center_div'>
+
+                <h1> {num} </h1>   
+                 
+                <div className='btn_div'>
+                    <button onClick={incNum}> Increm</button>
+                    <button onClick={dicNum}> Decrem </button>
+                </div>
+
             </div>
-        </>
+
+
+        </div>
     )
 }
-//IN REact WE have to types of component Controlled and Uncontrolled
+
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react'
+
+// const App = () => {
+
+//     const [fullName, setfullName] = useState({
+//         firstname: '',
+//         lastname: '',
+//         email: '',
+//         number: '',
+//     }); //useState ke andar hum object or function bhi pass kr skte ha
+
+//     const inputEvent = (event) => {
+//         // console.log(event.target.value)
+//         // console.log(event.target.name)
+
+
+
+//         const {name, value} = event.target;//Destructuring
+//         // const value = event.target.value;
+//         // const name = event.target.name;
+
+//         setfullName( (preValue) => {
+//             console.log(preValue)
+//             if(name === 'firstname'){
+//                 return {
+//                     firstname: value,
+//                     lastname: preValue.lastname,
+//                     email:preValue.email,
+//                     number:preValue.number,
+//                 }
+
+//             }else if(name === "lastname"){
+//                 return{
+//                     firstname: preValue.firstname,
+//                     lastname: value,
+//                     email: preValue.email,
+//                     number: preValue.number,
+//                 }
+//             }
+//             else if(name === "email"){
+//                 return{
+//                     firstname: preValue.firstname,
+//                     lastname: preValue.lastname,
+//                     email: value,
+//                     number:preValue.number,
+//                 }
+//             }
+//             else if(name === "number"){
+//                 return{
+//                     firstname: preValue.firstname,
+//                     lastname: preValue.lastname,
+//                     email: preValue.email,
+//                     number: value,
+//                 }
+//             }
+//         })
+//         //setName(event.target.value)
+//     }
+
+//     const onSubmit = (event) => {
+//         event.preventDefault(); //har event ka ek object hota ha (e) or event.preventdefault bina refresh kr value leta ha mt kro refresh mtb
+//         // setFullName(name);
+//         // setnewLast(lastName )
+//         alert('form submitted')
+//     }
+
+
+//     return (
+//         <>
+//             <div className="main_div">
+//                 <form onSubmit={onSubmit}>
+//                     <div>
+//                         <h1>Hello {fullName.firstname} {fullName.lastname} </h1>
+//                         <input type='text' placeholder='Enter your firstname' name='firstname' onChange={inputEvent} value={fullName.firstname} /><br/>
+//                         <input type='text' placeholder='Enter your lastname' name='lastname' onChange={inputEvent} value={fullName.lastname} />
+//                         <input type='text' placeholder='Enter your email' name='email' onChange={inputEvent} value={fullName.email} />
+//                         <input type='text' placeholder='Enter your number' name='number' onChange={inputEvent} value={fullName.number} />
+//                         <button type='submit' >Submit </button>
+//                     </div>
+//                 </form>
+//             </div>
+//         </>
+//     )
+// }
+// //IN REact WE have to types of component Controlled and Uncontrolled
+// export default App
 
 
 
