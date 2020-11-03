@@ -1,53 +1,30 @@
-import React from 'react'
-import '..\node_modules\bootstrap\dist\css\bootstrap-grid.min.css'
+import React, { createContext } from 'react';
+
+import ComA from './ComA';
+// import ComB from './ComB';
+
+
+const FirstName = createContext();
+
+//CONTEXT API - React context API allows you to easily access data at different levels of the component tree without passing prop to every level.
+//3 steps
+//1 createContext() . 2. provider . 3. consumer 
+
 const App = () => {
+   
     return (
-        <div>
-            <h1> Welcome</h1>
+        <>
 
-            <div class="container">
-                <div class="row"> 
-                    <div class="col-sm">
-                      
+        <FirstName.Provider value={"vinod"}>  
+        <ComA/>    
+     </FirstName.Provider>
+     </>
 
-                        <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap"/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
-    </div>
-                    <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap"/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-                    <div class="col-sm">
-                    <div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap"/>
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-    </div>
-                </div>
-            </div>
-        </div>
-    )
+    );
 }
 
-export default App
-
+export default App;
+export {FirstName};
 
 
 
