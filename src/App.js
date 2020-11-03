@@ -1,43 +1,145 @@
-import React, { useState } from 'react';
-import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
-import AddIcon from '@material-ui/icons/Add';
-
-
+import React from 'react'
+import '..\node_modules\bootstrap\dist\css\bootstrap-grid.min.css'
 const App = () => {
-
-    const [num ,setNum] = useState(0);
-
-    const incNum = () =>{
-        setNum(num+1)  //num = num+1
-    }
-
-    const dicNum =() =>{
-
-        if(num > 0){
-       setNum(num-1);
-    }else{
-        setNum(0);
-    }
-    }
     return (
-        <div className='main_div'>
-            <div className='center_div'>
+        <div>
+            <h1> Welcome</h1>
 
-                <h1> {num} </h1>   
-                 
-                <div className='btn_div'>
-                    <button onClick={incNum}> <AddIcon/> </button>
-                    <button onClick={dicNum}>  <AddIcon/> </button>
+            <div class="container">
+                <div class="row"> 
+                    <div class="col-sm">
+                      
+
+                        <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap"/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+
+    </div>
+                    <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap"/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
+                    <div class="col-sm">
+                    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="..." alt="Card image cap"/>
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
+    </div>
                 </div>
-
             </div>
-
-
         </div>
     )
 }
 
 export default App
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { useState } from 'react';
+// import AddCircleOutlineIcon from '@material-ui/icons/AddCircleOutline';
+// import AddIcon from '@material-ui/icons/Add';
+
+
+// const App = () => {
+
+//     const [num ,setNum] = useState(0);
+
+//     const incNum = () =>{
+//         setNum(num+1)  //num = num+1
+//     }
+
+//     const dicNum =() =>{
+
+//         if(num > 0){
+//        setNum(num-1);
+//     }else{
+//         setNum(0);
+//     }
+//     }
+//     return (
+//         <div className='main_div'>
+//             <div className='center_div'>
+
+//                 <h1> {num} </h1>   
+
+//                 <div className='btn_div'>
+//                     <button onClick={incNum}> <AddIcon/> </button>
+//                     <button onClick={dicNum}>  <AddIcon/> </button>
+//                 </div>
+
+//             </div>
+
+
+//         </div>
+//     )
+// }
+
+// export default App
 
 
 

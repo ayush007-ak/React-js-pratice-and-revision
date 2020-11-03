@@ -29,3 +29,5 @@ Forms in React = creating form and submitting we are using control component.Har
 LOgin form = event.preventDefault(), (event) <- object ha yeh
 jab jab user kuch bhi type karega inputevent call hoga (onChange)
 SPREAD OPERATOR = 
+materail UI = date 2-11-2020
+NPM = world largest software registry. npm is just like warehouse
