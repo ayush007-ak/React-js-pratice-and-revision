@@ -5,11 +5,14 @@ const ComC = () => {
     return (
         <>
 
-            <FirstName.Consumer> {(fname) => {
+            <FirstName.Consumer> 
+            {(fname) => {
                 return <h1> MY name is {fname}</h1>;
-            }}  </FirstName.Consumer>
+            }}  
+            </FirstName.Consumer>
+
         </>
-    )
-}
+    );
+};
 
 export default ComC

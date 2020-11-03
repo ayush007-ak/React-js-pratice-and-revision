@@ -32,3 +32,4 @@ SPREAD OPERATOR =
 materail UI = date 2-11-2020
 NPM = world largest software registry. npm is just like warehouse.
 Context-APi - parent component->child component A->child componenet B->child Component C //Data flow hota ha parent to child
+jo bhi data lega vo as a consumer kaam karega or vo hamesha function ko expexct karega.

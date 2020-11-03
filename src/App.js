@@ -8,7 +8,9 @@ const FirstName = createContext();
 
 //CONTEXT API - React context API allows you to easily access data at different levels of the component tree without passing prop to every level.
 //3 steps
-//1 createContext() . 2. provider . 3. consumer 
+//1 createContext() . 2. provider . 3. consumer
+
+//HUME PROPS NI PASS KRNA PADTA CONTEXT API MA
 
 const App = () => {
    
