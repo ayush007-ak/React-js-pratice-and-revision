@@ -1,82 +1,93 @@
-import React, { createContext } from 'react';
+//React hooks -> USEEFFECT - Component need to do something after rendering- re render kr dewga page ko / render function call ho jane ke baad kya krna ha vo batata ha yeh setb krta ha
+ import React, { useEffect, useState } from 'react'
+ 
+ const App = () => {
+    const [ num, setNum] = useState(0);
+    const [ num1, setNum1] = useState(0)
 
-import ComA from './ComA';
-// import ComB from './ComB';
 
 
-const FirstName = createContext();
+    useEffect(() => {
+    alert('increment by 1')
 
-//CONTEXT API - React context API allows you to easily access data at different levels of the component tree without passing prop to every level.
-//3 steps
-//1 createContext() . 2. provider . 3. consumer
+    },[num]) //empty array means ek bar load hoga
+     return (
+         <>
+             <button onClick = {() => {
+                 setNum(num + 1);                //() =>{alert('i am client)}
+             }}> 
+             Click me {num}</button>
 
-//HUME PROPS NI PASS KRNA PADTA CONTEXT API MA
+             <button onClick = {() => {
+                 setNum1(num1 + 1);                //() =>{alert('i am client)}
+             }}> 
+             Click me {num1}</button>
+         </>
+     )
+ }
+ 
+ export default App
+ 
 
-const App = () => {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import React, { createContext } from 'react';
+
+// import ComA from './ComA';
+// // import ComB from './ComB';
+
+
+// const FirstName = createContext();
+
+// //CONTEXT API - React context API allows you to easily access data at different levels of the component tree without passing prop to every level.
+// //3 steps
+// //1 createContext() . 2. provider . 3. consumer
+
+// //HUME PROPS NI PASS KRNA PADTA CONTEXT API MA
+
+// const App = () => {
    
-    return (
-        <>
+//     return (
+//         <>
 
-        <FirstName.Provider value={"vinod"}>  
-        <ComA/>    
-     </FirstName.Provider>
-     </>
+//         <FirstName.Provider value={"vinod"}>  
+//         <ComA/>    
+//      </FirstName.Provider>
+//      </>
 
-    );
-}
+//     );
+// }
 
-export default App;
-export {FirstName};
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// export default App;
+// export {FirstName};
 
 
 // import React, { useState } from 'react';
