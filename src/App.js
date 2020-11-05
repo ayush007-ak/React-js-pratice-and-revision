@@ -1,32 +1,93 @@
-//React hooks -> USEEFFECT - Component need to do something after rendering- re render kr dewga page ko / render function call ho jane ke baad kya krna ha vo batata ha yeh setb krta ha
- import React, { useEffect, useState } from 'react'
- 
- const App = () => {
-    const [ num, setNum] = useState(0);
-    const [ num1, setNum1] = useState(0)
+import React, { useEffect, useState } from 'react'
 
 
+
+const App = () => {
+    const [num , setnum] = useState(0)
 
     useEffect(() => {
-    alert('increment by 1')
+        //alert("Hello")
+        document.title=`you clicked me${num}`
+    })
+    return (
+        <button onClick={() => {
+            setnum(num+1)
+        }}> Click Me {num}</button>
+    )
+}
 
-    },[num]) //empty array means ek bar load hoga
-     return (
-         <>
-             <button onClick = {() => {
-                 setNum(num + 1);                //() =>{alert('i am client)}
-             }}> 
-             Click me {num}</button>
+export default App
 
-             <button onClick = {() => {
-                 setNum1(num1 + 1);                //() =>{alert('i am client)}
-             }}> 
-             Click me {num1}</button>
-         </>
-     )
- }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //React hooks -> USEEFFECT - Component need to do something after rendering- re render kr dewga page ko / render function call ho jane ke baad kya krna ha vo batata ha yeh setb krta ha
+//  import React, { useEffect, useState } from 'react'
  
- export default App
+//  const App = () => {
+//     const [ num, setNum] = useState(0);
+//     const [ num1, setNum1] = useState(0)
+
+
+
+//     useEffect(() => {
+//     alert('increment by 1')
+
+//     },[num]) //empty array means ek bar load hoga
+//      return (
+//          <>
+//              <button onClick = {() => {
+//                  setNum(num + 1);                //() =>{alert('i am client)}
+//              }}> 
+//              Click me {num}</button>
+
+//              <button onClick = {() => {
+//                  setNum1(num1 + 1);                //() =>{alert('i am client)}
+//              }}> 
+//              Click me {num1}</button>
+//          </>
+//      )
+//  }
+ 
+//  export default App
  
 
 
