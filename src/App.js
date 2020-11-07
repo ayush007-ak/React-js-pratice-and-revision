@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react'
+//React AXios and APi call
+//Fetch API -AXIOS is use to fetch APIs
 
-
+import React from 'react'
 
 const App = () => {
-    const [num , setnum] = useState(0)
-
-    useEffect(() => {
-        //alert("Hello")
-        document.title=`you clicked me${num}`
-    })
     return (
-        <button onClick={() => {
-            setnum(num+1)
-        }}> Click Me {num}</button>
+        <div>
+            
+        </div>
     )
 }
 
@@ -41,21 +36,25 @@ export default App
 
 
 
+// import React, { useEffect, useState } from 'react'
 
 
 
+// const App = () => {
+//     const [num , setnum] = useState(0)
 
+//     useEffect(() => {
+//         //alert("Hello")
+//         document.title=`you clicked me${num}`
+//     })
+//     return (
+//         <button onClick={() => {
+//             setnum(num+1)
+//         }}> Click Me {num}</button>
+//     )
+// }
 
-
-
-
-
-
-
-
-
-
-
+// export default App
 
 
 
