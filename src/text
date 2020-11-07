@@ -36,4 +36,5 @@ jo bhi data lega vo as a consumer kaam karega or vo hamesha function ko expexct 
 HOOKS - hooks kabhi bhi class componenet ke sath kaa ni krtaha always remember
 Lifecycle Method - componenetDidmount , ComponentDidUpdate,CompnenetWillMount. for class Component
 UseEffect - we use UseEffect in functional Component.
- 
+ POkemon APi -
+ React Router - noraml website ma page reloadhota ha mtlb server side routing ka use kr rhe ha/ React ma hume full reload ni jsa ha component vsa lejati ha.React router is use to access page without reloading

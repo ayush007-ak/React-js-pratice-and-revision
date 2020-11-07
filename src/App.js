@@ -1,14 +1,21 @@
-//React AXios and APi call
-//Fetch API -AXIOS is use to fetch APIs
+//client side routing hoti ha React router ma / Client side rendering use kr rhe ha jo ki super fast ha server side rendering se.
+
+
 
 import React from 'react'
-
+import {Route , Switch} from 'react-router-dom';
+import About from './About';
+import Contact from './Contact';
 const App = () => {
     return (
         <div>
-            
+        <Switch>
+            <Route path = '/' component={About}/>
+            <Route  path='/Contact' component={Contact}/>
+        </Switch>
         </div>
     )
+      
 }
 
 export default App
@@ -34,6 +41,60 @@ export default App
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// //React AXios and APi call
+// //Fetch API -AXIOS is use to fetch APIs
+
+// import React from 'react'
+
+// const App = () => {
+//     return (
+//         <div>
+            
+//         </div>
+//     )
+// }
+
+// export default App
 
 
 // import React, { useEffect, useState } from 'react'
