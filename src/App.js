@@ -1,21 +1,12 @@
-//client side routing hoti ha React router ma / Client side rendering use kr rhe ha jo ki super fast ha server side rendering se.
-
-
-
 import React from 'react'
-import {Route , Switch} from 'react-router-dom';
-import About from './About';
-import Contact from './Contact';
+import Navbar from './Navbar'
+
 const App = () => {
     return (
         <div>
-        <Switch>
-            <Route path = '/' component={About}/>
-            <Route  path='/Contact' component={Contact}/>
-        </Switch>
+            <Navbar/>
         </div>
     )
-      
 }
 
 export default App
@@ -60,23 +51,25 @@ export default App
 
 
 
+//client side routing hoti ha React router ma / Client side rendering use kr rhe ha jo ki super fast ha server side rendering se.
 
+// import React from 'react'
+// import {Route , Switch} from 'react-router-dom';
+// import About from './About';
+// import Contact from './Contact';
+// const App = () => {
+//     return (
+//         <div>
+//         <Switch>
+//             <Route path = '/' component={About}/>
+//             <Route  path='/Contact' component={Contact}/>
+//         </Switch>
+//         </div>
+//     )
+      
+// }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// export default App
 
 
 
